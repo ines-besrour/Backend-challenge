@@ -34,12 +34,10 @@ This project is a NestJS-based API for searching artists using the Last.fm API a
 1. Search for Artists
   URL: /artists/search
 
-  #Method: GET
-  #Query Parameters:
-  #name (string) - The name of the artist to search for.
+  Method GET:
+  Query Parameters: name (string) - The name of the artist to search for.
   
   Example:
-   ```bash
    "localhost:8080/artists/search?name=the weekend"
    
 
@@ -48,18 +46,15 @@ This project is a NestJS-based API for searching artists using the Last.fm API a
 2. Export Artists to CSV
   URL: /artists/export
 
-  Method: POST
-  Body:
-  name (string) - The name of the artist to search for.
+  Method POST:
+  Body: name (string) - The name of the artist to search for.
   filename (string) - The name of the CSV file to create.
   
   Example:
-
-   ```bash
    "localhost:8080/artists/export" 
    {
      "name": "the weekend",
      "filename": "output.csv"
    }'
 
- Response: A message indicating the CSV file has been created successfully.
+  Response: A message indicating the CSV file has been created successfully.
