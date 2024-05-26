@@ -42,7 +42,7 @@ NestJS offers a more structured and maintainable approach with its modular desig
 
 - **Example Request:**
     ```http
-    GET http://localhost:8080/artists/search?name=the+weekend
+    GET localhost:8080/artists/search?name=the+weekend
     ```
 
 #### Export Artists to CSV
@@ -54,7 +54,7 @@ NestJS offers a more structured and maintainable approach with its modular desig
 
 - **Example Request:**
     ```http
-    POST http://localhost:8080/artists/export
+    POST localhost:8080/artists/export
     Content-Type: application/json
 
     {
