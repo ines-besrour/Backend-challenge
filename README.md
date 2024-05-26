@@ -41,7 +41,7 @@ This project is a NestJS-based API for searching artists using the Last.fm API a
   Example:
 
    ```bash
-   curl -X GET "http://localhost:8080/artists/search?name=the weekend"
+   "localhost:8080/artists/search?name=the weekend"
 
   Response: A JSON array of artists matching the search criteria.
 
@@ -56,9 +56,10 @@ This project is a NestJS-based API for searching artists using the Last.fm API a
   Example:
 
    ```bash
-   curl -X POST "http://localhost:8080/artists/export" -H "Content-Type: application/json" -d '{
+   "localhost:8080/artists/export" 
+   {
      "name": "the weekend",
      "filename": "output.csv"
    }'
 
-  Response: A message indicating the CSV file has been created successfully.
+ Response: A message indicating the CSV file has been created successfully.
