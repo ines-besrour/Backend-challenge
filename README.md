@@ -1,4 +1,4 @@
-# NestJS Artists API
+# Backend-challenge
 
 ## Overview
 
