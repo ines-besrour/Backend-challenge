@@ -15,18 +15,19 @@ This project is a NestJS-based API for searching artists using the Last.fm API a
 
 2. Install the dependencies:
 
-  ```bash
-  npm install
+   ```bash
+   npm install
 
 
 3. Create a .env file in the root of the project and add the Last.fm API key and the port:
 
-  ```bash
-  LAST_FM_API_KEY=your_actual_api_key
-  PORT=8080
+   ```bash
+   LAST_FM_API_KEY=your_actual_api_key
+   PORT=8080
 
 4. run the application
-  npm run start
+   ```bash
+   npm run start
 
 ## Endpoints
 
@@ -39,8 +40,8 @@ This project is a NestJS-based API for searching artists using the Last.fm API a
   
   Example:
 
-  ```bash
-    curl -X GET "http://localhost:8080/artists/search?name=the weekend"
+   ```bash
+   curl -X GET "http://localhost:8080/artists/search?name=the weekend"
 
   Response: A JSON array of artists matching the search criteria.
 
@@ -54,10 +55,10 @@ This project is a NestJS-based API for searching artists using the Last.fm API a
   
   Example:
 
-  ```bash
-    curl -X POST "http://localhost:8080/artists/export" -H "Content-Type: application/json" -d '{
-      "name": "the weekend",
-      "filename": "output.csv"
-    }'
+   ```bash
+   curl -X POST "http://localhost:8080/artists/export" -H "Content-Type: application/json" -d '{
+     "name": "the weekend",
+     "filename": "output.csv"
+   }'
 
   Response: A message indicating the CSV file has been created successfully.
