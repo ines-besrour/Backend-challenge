@@ -34,14 +34,14 @@ This project is a NestJS-based API for searching artists using the Last.fm API a
 1. Search for Artists
   URL: /artists/search
 
-  Method: GET
-  Query Parameters:
-  name (string) - The name of the artist to search for.
+  #Method: GET
+  #Query Parameters:
+  #name (string) - The name of the artist to search for.
   
   Example:
-
    ```bash
    "localhost:8080/artists/search?name=the weekend"
+   
 
   Response: A JSON array of artists matching the search criteria.
 
