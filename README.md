@@ -4,6 +4,9 @@
 
 This project is a NestJS-based API for searching artists using the Last.fm API and exporting search results to a CSV file. The project is structured using the NestJS framework with modules, controllers, and services.
 
+## Why choosing Nestjs: 
+
+NestJS offers a more structured and maintainable approach with its modular design, TypeScript support, and built-in features, making it a better choice for long-term maintainability and scalability. 
 
 ## Installation
 
