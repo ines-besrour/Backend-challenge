@@ -34,33 +34,42 @@ NestJS offers a more structured and maintainable approach with its modular desig
 
 ## Endpoints
 
-1. Search for Artists
-  URL: /artists/search
+#### Search Artists
 
-  Method GET:
-  Query Parameters: name (string) - The name of the artist to search for.
-  
-  Example:
-   "localhost:8080/artists/search?name=the weekend"
-   
+- **URL:** `GET /artists/search`
+- **Query Parameters:**
+  - `name` (string): The name of the artist to search for.
 
-  Response: A JSON array of artists matching the search criteria.
+- **Example Request:**
+    ```http
+    GET http://localhost:8080/artists/search?name=the+weekend
+    ```
 
-2. Export Artists to CSV
-  URL: /artists/export
+#### Export Artists to CSV
 
-  Method POST:
-  Body: 
-  
-  name (string) - The name of the artist to search for.
-  
-  filename (string) - The name of the CSV file to create.
-  
-  Example:
-   "localhost:8080/artists/export" 
-   {
-     "name": "the weekend",
-     "filename": "output.csv"
-   }'
+- **URL:** `POST /artists/export`
+- **Body Parameters:**
+  - `name` (string): The name of the artist to search for.
+  - `filename` (string): The name of the CSV file to create.
 
-  Response: A message indicating the CSV file has been created successfully.
+- **Example Request:**
+    ```http
+    POST http://localhost:8080/artists/export
+    Content-Type: application/json
+
+    {
+      "name": "the weekend",
+      "filename": "output.csv"
+    }
+    ```
+
+## Proof of Concept
+
+Below are screenshots demonstrating that the project works as expected.
+
+
+![get](./src/assets/get.jpg)
+
+![post](./src/assets/post.jpg)
+
+![CSV](./src/assets/outputfile.jpg)
