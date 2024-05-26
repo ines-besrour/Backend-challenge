@@ -47,7 +47,10 @@ This project is a NestJS-based API for searching artists using the Last.fm API a
   URL: /artists/export
 
   Method POST:
-  Body: name (string) - The name of the artist to search for.
+  Body: 
+  
+  name (string) - The name of the artist to search for.
+  
   filename (string) - The name of the CSV file to create.
   
   Example:
